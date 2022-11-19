@@ -8,7 +8,7 @@ Console.WriteLine("Из имеющегося массива:");
 PrintArray(firstMassiv);
 Console.WriteLine();
 Console.WriteLine("Представим массив, в котoром " +
-                  "длинна эллементов не больше 3:");
+                  "длинна эллементов меньше или равна 3:");
 NewArray(firstMassiv);
 
 string[] CreateArray()
@@ -31,7 +31,8 @@ void NewArray(string[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
-        if (array[i].Length <= 3)
+        int size = 3;
+        if (array[i].Length <= size)
         {
             Console.Write(array[i] + "\t");
         }
