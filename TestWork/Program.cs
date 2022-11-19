@@ -3,7 +3,13 @@
 // [“1234”, “1567”, “-2”, “computer science”] → [“-2”]
 // [“Russia”, “Denmark”, “Kazan”] → []
 
-
+string[] firstMassiv = CreateArray();
+Console.WriteLine("Из имеющегося массива:");
+PrintArray(firstMassiv);
+Console.WriteLine();
+Console.WriteLine("Представим массив, в котoром " +
+                  "длинна эллементов не больше 3:");
+NewArray(firstMassiv);
 
 string[] CreateArray()
 {
